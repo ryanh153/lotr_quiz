@@ -10,6 +10,7 @@ app = Flask(__name__)
 def base_question():
     print('in base')
     ii = np.random.randint(0, len(questions))
+    print(f'Picked index {ii}')
     question = questions[ii]
     return render_template('base_question.html', question=question)
 

@@ -154,10 +154,128 @@ without_indices = [
 
     Question(question="In which peak of the Misty Mountains was Durin's Tower?",
              options=("Mount Gundabad", "Caradhras", "Fanuidhol", "Celebdil"),
-             answer=3)
+             answer=3),
+
+    Question(question="Who was Théoden's banner-bearer?",
+             options=("Herufara", "Eothain", "Grimbrand", "Guthlaf"),
+             answer=3),
+
+    Question(question="Who, on the battlefield, realised that Éowyn still lived?",
+             options=("Amroth", "Aragorn", "Imrahil", "Erestor"),
+             answer=2),
+
+    Question(question="Trolls have what color blood?",
+             options=("Black", "Green", "Red", "Khaki"),
+             answer=0),
+
+    Question(question="What protected Merry and Pippin from being slain by the rider whose horse jumped over them?",
+             options=("They were hidden under their Elf cloaks", "They were hidden by Grishnákh",
+                      "He missed them in the dark", "Mount Gundabad"),
+             answer=0),
+
+    Question(question="To the base of which mountain did Treebeard carry the hobbits?",
+             options=("Mindolluin", "Menegroth", "Methedras", "Mount Gundabad"),
+             answer=2),
+
+    Question(question="Aragorn was surprised to hear of the Ents as he thought they were ...?",
+             options=("A tale from the Elder Days", "A legend of Rohan",
+                      "A rumour out of the Wilderland", "A story told by the Elves of Mirkwood"),
+             answer=1),
+
+    Question(question="What are the great pillars flanking the river Anduin called?",
+             options=("The Argonauts", "The Argonath", "The Argonom", "The Argoplum"),
+             answer=1),
+
+    Question(question="Name the 'grey hills' through which Sam and Frodo had to find a route alone",
+             options=("Grey Mountains", "Misty Mountains", "Emyn Muil", "Cairngorms"),
+             answer=2),
+
+    Question(question="What did Éomer call hobbits?",
+             options=("Dwarves", "Halflings", "Perian", "Snaga"),
+             answer=1),
+
+    Question(question="Why do Pippin and Merry sit on Treebeard's table?",
+             options=("The chairs are all Ent-sized and too big for them", "There are no chairs in his Enthouse",
+                      "The chairs are all covered with bundles of plants", "All the chairs are broken"),
+             answer=1),
+
+    Question(question="What, according to Gandalf, was the only thing that would ensure victory in the coming war?",
+             options=("Use of the Ring", "The valour of the Men of Gondor", "The armies of Rohirrim",
+                      "All the Free People of the West working together"),
+             answer=0),
+
+    Question(question="Who built Meduseld?",
+             options=("Brego son of Eorl", "Eorl the Young", "Théoden son of Thengel", "The Stewards of Gondor"),
+             answer=0),
+
+    Question(question="What do men now call the region where the Entwives had their gardens?",
+             options=("The Dead Marshes", "The Brown Lands", "The Old Forest", "The Grey Mountains"),
+             answer=1),
+
+    Question(question="What did Gandalf say lay beneath the 'great smoke' that Legolas saw?",
+             options=("Fire and death", "Battle and war", "Wizardry and destruction", "Treachery and fighting"),
+             answer=1),
+
+    Question(question="What did Gimli choose when offered any gift from King Théoden's Armoury?",
+             options=("An axe and chain-mail", "A sword and scabbard", "A knife and sheath", "A cap and shield"),
+             answer=3),
+
+    Question(question="Of what did Galadriel warn Legolas in her message?",
+             options=("Mind the Gap of Rohan", "Beware the Sae", "Take care when crossing the Isen",
+                      "Watch out for Oliphaunts"),
+             answer=1),
+
+    Question(question="Who did gríma truly serve while counsellor the Théoden?",
+             options=("Saruman", "Sauron", "The Nazgûl", "Uglúk"),
+             answer=0),
+
+    Question(question="How old was Pippin when he became a soldier of Gondor?",
+             options=("33", "50", "25", "28"),
+             answer=3),
+
+    Question(question="What did Aragorn call Théoden, when speaking of his body returning to Rohan?",
+             options=("Théoden the Slayer", "Théoden the Renewed", "Théoden the Horse-Lord", "Théoden the Renowned"),
+             answer=3),
+
+    Question(question="Into what should Bilbo have put the Ring, to leave it for Frodo?",
+             options=("A pouch", "A handkerchief", "An envelope", "A rag"),
+             answer=2),
+
+    Question(question="What is the name of the hill that is about half way between Bree and Rivendell?",
+             options=("Stormdale", "Hailpeak", "Snow gully", "Weathertop"),
+             answer=3),
+
+    Question(question="Name the husband of Lobelia Sackville-Baggins",
+             options=("Oscar", "Otho", "Lotho", "Nemo"),
+             answer=1),
+
+    Question(question="What name do the hobbits use for the constellation we call the Plough?",
+             options=("The Hoe", "The Trowel", "The Sickle", "The Shovel"),
+             answer=2),
+
+    Question(question="What ring did Galadriel wear?",
+             options=("Nenya", "Narya", "Varya", "Venya"),
+             answer=0),
+
+    Question(question="Who feared 'to stay behind bars, until use and old age accept them'?",
+             options=("Éomer", "Éowyn", "Saruman", "Bilbo"),
+             answer=1),
+
+    Question(question="How did Merry secretly join the army riding to Minas Tirith?",
+             options=("Under a rider's cloak", "Following on foot", "On his pony", "In the baggage van"),
+             answer=0),
+
+    Question(question="Who brought the first news of the assault on Osgiliath to Minas Tirith?",
+             options=("Faramir", "Beregond", "Gandalf", "The Prince of Dol Amroth"),
+             answer=2),
+
+
 ]
 
 questions = list()
 for ii, q in enumerate(without_indices):
     q.index = ii
     questions.append(q)
+
+
+print(len(questions))
