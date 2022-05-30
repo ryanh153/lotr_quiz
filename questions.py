@@ -8,6 +8,7 @@ class Question:
     options: Tuple[str, str, str, str]
     answer: int
     index: int = 0
+    extra_text: str = ""
 
 
 without_indices = [
@@ -269,6 +270,148 @@ without_indices = [
              options=("Faramir", "Beregond", "Gandalf", "The Prince of Dol Amroth"),
              answer=2),
 
+    Question(question="How many Ents left the Entmoot and marched on Isengard?",
+             options=("About fifty", "Several hundred", "Only twenty or so", "Several dozen"),
+             answer=0),
+
+    Question(question="What did the head of the great battering ram look like?",
+             options=("A leering Orc", "A ravening wolf", "A great mailed fist", "A snarling Troll"),
+             answer=1),
+
+    Question(question="How many times did the great battering ram strike the gates of Minas Tirith?",
+             options=("Once", "Twice", "Thrice", "Four times"),
+             answer=2),
+
+    Question(question="What did Gandalf conclude would  happen if Isengard and Mordor fought each other?",
+             options=("The victor would emerge stronger than either and free from doubt",
+                      "The victor would turn his attention on Gondor and be merciless",
+                      "The loser would try to make an alliance with the Men of Minas Tirith and corrupt them",
+                      "The victor would make fair seem foul and foul seem fair"),
+             answer=0),
+
+    Question(question="Who was gríma's father?",
+             options=("Glóin", "Gríma", "Grond", "Galmod"),
+             answer=3),
+
+    Question(question="What title did Merry and Pippin claim at the ruined gates of Isengard",
+             options=("Gatekeepers", "Way-watchers", "Doorwardens", "Caretakers"),
+             answer=2),
+
+    Question(question="When he returned to Minas Tirith, what did Faramir do with his company from Henneth Annun?",
+             options=("Sent them to guard Cair Andros", "Left them to watch the road from Minas Morgul",
+                      "Left them at Henneth Annun to ambush more Oliphaunts",
+                      "Sent them to strengthen the garrison at the fords of Osgiliath"),
+             answer=3),
+
+    Question(question="What did Ghân-buri-Ghân say before he vanished?",
+             options=("\"Day is coming!\"", "\"Darkness is breaking\"", "\"Wind is changing!\"",
+                      "\"Stone-houses are burning!\""),
+             answer=2),
+
+    Question(question="Who apart from Éowyn did Théoden ask to see, as he lay dying?",
+             options=("Theodred", "Gandalf", "Éomer", "Pippin"),
+             answer=2),
+
+    Question(question="What frightened Frodo most in the Mirror of Galadriel?",
+             options=("An eye", "His death", "The ruin of the Shire", "Bilbo wandering lost"),
+             answer=0),
+
+    Question(question="What gift did Galadriel give Boromir, when the Company left Lothlórien?",
+             options=("A sword", "A shield", "A belt of gold", "A silver brooch"),
+             answer=2),
+
+    Question(question="What did Éomer rename Aragorn?",
+             options=("Fastfoot", "Wingfoot", "Lightfoot", "Sorefoot"),
+             answer=1),
+
+    Question(question="Merry said to Théoden that he would run to battle eve if ...",
+             options=("He had to crawl", "He had to be rolled in a barrel",
+                      "He ran his feet off", "It took a year and a day"),
+             answer=2),
+
+    Question(question="What was Denethor's purpose in questioning Pippin so closely?",
+             options=("To try to find out about the Ring", "To insult Gandalf",
+                      "He could use \"even his grief as a cloak\"", "To pass a boring morning"),
+             answer=2),
+
+    Question(question="How far were the host of Rohan from Pelennor, when they left the hidden valley?",
+             options=("Seven miles", "Ten miles", "Seven furlongs", "Seven leagues"),
+             answer=3),
+
+    Question(question="What decorated the gift Galadriel gave Sam, when he left Lothlórien?",
+             options=("The 'G' rune", "A flower", "A tree", "The 'S' rune"),
+             answer=0),
+
+    Question(question="To where did Éomer ask Aragorn to return the horses he lent him?",
+             options=("Gondor", "Isengard", "Meduseld", "Tol Brandir"),
+             answer=2),
+
+    Question(question="What was the name of the Entwife that Fangorn loved?",
+             options=("Fentathren", "Finduilas", "Fingalad", "Fimbrethil"),
+             answer=3),
+
+    Question(question="Who was last of the Company to enter the Paths of the Dead, and the most afraid?",
+             options=("Arod, the horse of Rohan", "Gimli", "Legolas", "Halbarad"),
+             answer=1),
+
+    Question(question="How far did the army of Rohan ride on their first day's journey from Edoras?",
+             options=("Two leagues", "Twenty leagues", "Twelve leagues", "Two hundred leagues"),
+             answer=2),
+
+    Question(question="What newcomers did Gandalf say they would see before the arrival of the Rohirrim?",
+             options=("Aragorn and his kinsmen, the Rangers of the north",
+                      "Fugitives from Cair Andros", "The hosts of Morgul", "The Corsairs of Umbar"),
+             answer=1),
+
+    Question(question="Who did the city watchmen believe were in the ships sailing up the Anduin?",
+             options=("Pirates", "Orcs", "Ghosts", "Corsairs"),
+             answer=3),
+
+    Question(question="What gift did Galadriel give Frodo, when the Company left Lothlórien?",
+             options=("A sword", "A golden belt", "A crystal vial", "A ring"),
+             answer=2),
+
+    Question(question="What was the name of the horse that Éomer lent to Legolas?",
+             options=("Shadowfax", "Snowmane", "Elendil", "Arod"),
+             answer=3),
+
+    Question(question="Who went ahead of the Company to find the way around the rapids?",
+             options=("Aragorn and Legolas", "Aragorn and Boromir", "Boromir and Legolas", "Gimli and Legolas"),
+             answer=0),
+
+    Question(question="Where did Same and Frodo land their boat after leaving the Company?",
+             options=("On Tol Brandir", "On the slopes of Amon Lhaw", "On Path Galen", "On the Emyn Muil"),
+             answer=1),
+
+    Question(question="Who said \"I would cut off your head, beard and all, Master Dwarf, if it stood but a little "
+                      "higher from the ground\"?",
+             options=("Saruman", "Wormtongue", "Éomer", "Boromir"),
+             answer=2),
+
+    Question(question="At the Prancing Pony, what did Nob use to make a nice imitation of Frodo's head?",
+             options=("A coconut", "A brown woolen mat", "A cushion", "A hedgehog"),
+             answer=1),
+
+    Question(question="What did Frodo shout out when he was stabbed, at Weathertop?",
+             options=("Namarie!", "O Elbereth! Gilthoniel!", "Elen sila lumenn!", "Luthien Tinúviel!"),
+             answer=1),
+
+    Question(question="What were the yellow winter flowers called that grew on Cerin Amroth, in Lórien?",
+             options=("Rosie", "Diamond", "Primula", "Elanor"),
+             answer=3),
+
+    Question(question="Mr Butterbur accused Frodo of breaking up his crocks with his ...?",
+             options=("High notes", "Juggling", "Acrobatics", "Shenanigans"),
+             answer=2),
+
+    Question(question="What broken object did Strider show Frodo, in the parlour of the Prancing Pony?",
+             options=("His leg", "His knife", "His backpack", "His sword"),
+             answer=3),
+
+    Question(question="Who was 'the fairest maiden that has ever been ...'?",
+             options=("Amina", "Éowyn", "Luthien", "Arwen"),
+             answer=0,
+             extra_text="According to the books it's Luthien though"),
 
 ]
 
@@ -278,4 +421,4 @@ for ii, q in enumerate(without_indices):
     questions.append(q)
 
 
-print(len(questions))
+print(f'We are working with {len(questions)} questions')

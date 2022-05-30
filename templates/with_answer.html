@@ -12,7 +12,10 @@
     </p>
 
     <p>
-        <b>{{ question.options[question.answer]}}</b>
+        <b>{{ question.options[question.answer]}}</b><br>
+        {% if question.extra_text != "" %}
+            <b>{{ question.extra_text }}</b>
+        {% endif %}
     </p>
 
     <p>
