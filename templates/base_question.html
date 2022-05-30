@@ -1,24 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
 <body>
-    <p>
-        {{ question.question }}
-    </p>
 
-    <p>
+    <div class="main_block">
+        {{ question.question }}
+    </div>
+
+    <div class="main_block">
         <form action="{{ url_for('with_options') }}" method="post">
             <button type="submit" class="button option_button" name="question_index" value={{ question.index }}>
                 Show Options
             </button>
         </form>
-    </p>
+    </div>
 
-    <p>
+    <div class="main_block">
         <form action="{{ url_for('with_answer') }}" method="post">
             <button type="submit" class="button answer_button" name="question_index" value={{ question.index }}>
                 Show Answer
             </button>
         </form>
-    </p>
+    </div>
+
 </body>
 {% endblock %}

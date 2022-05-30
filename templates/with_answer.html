@@ -1,29 +1,30 @@
 {% extends "layout.html" %}
 {% block content %}
 <body>
-    <p>
-        {{ question.question }}
-    </p>
+    <div class="main_block">
+            {{ question.question }}
+    </div>
 
-    <p>
-        {% for option in question.options %}
-            {{option}}<br>
-        {% endfor %}
-    </p>
+    <div class="main_block">
+            {% for option in question.options %}
+                {{option}}<br>
+            {% endfor %}
+    </div>
 
-    <p>
-        <b>{{ question.options[question.answer]}}</b><br>
-        {% if question.extra_text != "" %}
-            <b>{{ question.extra_text }}</b>
-        {% endif %}
-    </p>
+    <div class="main_block">
+            <b>{{ question.options[question.answer]}}</b><br>
+            {% if question.extra_text != "" %}
+                <b>{{ question.extra_text }}</b>
+            {% endif %}
+    </div>
 
-    <p>
-        <form action="{{ url_for('base_question') }}" method="get">
-            <button type="submit" class="button next_button">
-                Next Question
-            </button>
-        </form>
-    </p>
+    <div class="main_block">
+            <form action="{{ url_for('base_question') }}" method="get">
+                <button type="submit" class="button next_button">
+                    Next Question
+                </button>
+            </form>
+    </div>
+
 </body>
 {% endblock %}
