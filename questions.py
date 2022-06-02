@@ -413,6 +413,134 @@ without_indices = [
              answer=0,
              extra_text="According to the books it's Luthien though"),
 
+    Question(question="Which Ent almost caught Saruman when they attacked Isengard?",
+             options=("Brightbark", "Beechbone", "Leaflock", "Quickbeam"),
+             answer=3),
+
+    Question(question="What colours did Faramir's company wear in Ithilien?",
+             options=("Red and black", "Black and blue", "Green and brown", "Grey"),
+             answer=2),
+
+    Question(question="Who did Sam describe as 'Hard as diamonds, soft as moonlight'?",
+             options=("Gandalf", "Elrond", "Galadriel", "Celeborn"),
+             answer=2),
+
+    Question(question="How were the hobbits saved from Grishnákh?",
+             options=("Uglúk found them", "They lost him in the dark", "A Rider killed him", "Pippin killed him"),
+             answer=2),
+
+    Question(question="Complete the phrase \"Sheep get like ...\"",
+             options=("Shepherds", "Grass", "Dogs", "Barrels"),
+             answer=0),
+
+    Question(question="What Elven name does Legolas call Ents?",
+             options=("Ornedrim", "Galadhrim", "Onodrim", "Erynhoth"),
+             answer=2),
+
+    Question(question="What colour was Théoden's shield?",
+             options=("Gold", "Green", 'White', 'Red'),
+             answer=0),
+
+    Question(question="What type of weather was it, as the body of Théoden was taken to the city?",
+             options=('Bright sunshine', 'Thick fog', 'Howling a gale', 'Rain'),
+             answer=3),
+
+    Question(question="What do Hill-Trolls do to their enemies?",
+             options=('Scalp them', 'Bite their throats', 'Trample them', 'Poison them'),
+             answer=1),
+
+    Question(question="What had Treebeard forgotten that hobbits do?",
+             options=('They sit down to eat', 'They comb their hair', 'They lie down to sleep', 'The bathe their feet'),
+             answer=2),
+
+    Question(question='What relation was Éowyn to Éomer?',
+             options=('Wife', 'Sister', 'Cousin', 'None'),
+             answer=1),
+
+    Question(question='How many men of the Outlands rode to the defence of Minas Tirith, before the siege?',
+             options=('One hundred thousand', 'Ten thousand', 'Three thousand', 'Five hundred'),
+             answer=2),
+
+    Question(question='What was the \'Silent Street\' called in the Hallows of Minas Tirith?',
+             options=('Rath Dinen', 'Rathloriel', 'Rath Vorondil', 'Rath Numen'),
+             answer=0),
+
+    Question(question='Who was Aragorn\'s standard-bearer?',
+             options=('Hama', 'Herugrim', 'Húrin', 'Halbarad'),
+             answer=3),
+
+    Question(question="What does Quickbeam do whenever he sees a rowan-tree?",
+             options=('He waters its roots and chants a poem', 'He stops and sings to it',
+                      'He laughs and claps his hands', 'He caresses it and says something in Entish'),
+             answer=1),
+
+    Question(question="How often was a mayor elected in Michel Delving?",
+             options=('Once a week', 'Every 7 years', 'When the standing one could no longer stand', 'Annually'),
+             answer=1),
+
+    Question(question="At the Long-expected Party Bilbo wished, thirdly, to make...?",
+             options=('A cake', 'A complaint', 'A song and dance', 'An announcement!'),
+             answer=3),
+
+    Question(question="Where did Strider say that he and the hobbits should heard for, when they left Bree?",
+             options=('Weathertop', 'Dale', 'Isengard', 'Bombadil\'s house'),
+             answer=0),
+
+    Question(question="What is a Silmaril?",
+             options=("A crystal ball", 'A necklace', 'A pudding', 'A jewel'),
+             answer=3),
+
+    Question(question="Whilst trying to cross Caradhras, what did Frodo notice Legolas wearing on his feet?",
+             options=('Boots', 'Sandals', 'Light shoes', 'Nothing'),
+             answer=2),
+
+    Question(question="What did Boromir shout as he went to the rescue of Gandalf on the narrow bridge, in Moria?",
+             options=('Minas Tirith!', 'Osgiliath!', 'Faramir!', 'Gondor!'),
+             answer=3),
+
+    Question(question="Who did Aragorn refuse to take to the Paths of the Dead?",
+             options=('Éowyn', 'Éomer', 'Gríma', 'Merry'),
+             answer=0),
+
+    Question(question="What did Théoden call Minas Tirith?",
+             options=('Mundeli', 'Oldburg', 'Mundburg', 'Oldbury'),
+             answer=2),
+
+    Question(question="When Gandalf said that he would allow only one more \"but\" tonight what did Pippin then ask "
+                      "about?",
+             options=("Aragorn's use of the Palantir of Orthanc", "Gollum", 'When Merry and the Rohirrim would arrive',
+                      'Shelob'),
+             answer=1),
+
+    Question(question="What gift did Galadriel give Legolas when the Company left Lothlórien?",
+             options=('A sword', 'A gold belt', 'A bow and arrows', 'Good advice'),
+             answer=2),
+
+    Question(question="How many men did Éomer lose in the battle near Entwood",
+             options=('15', '25', '2', '30'),
+             answer=0),
+
+    Question(question="What happened to Leaflock the Ent - Had he ...?",
+             options=("Wandered out of Treebeard's land, looking for the Entwives",
+                      "Hidden himself deep in the darkest depths of Fangorn",
+                      "Been badly injured by axe-wielding Orcs",
+                      "Brown sleepy, almost tree-ish"),
+             answer=3),
+
+    Question(question="Which Ent stood 'as still as a door-tree', at the foot of the stairs to Orthanc?",
+             options=('Fastpole', 'Quickbeam', 'Hastyrod', 'Hurrystalk'),
+             answer=1),
+
+    Question(question="How does Pippin react when Gandalf arrives at the ruins of Isengard?",
+             options=('He rubs his eyes and imagines he must be dreaming',
+                      'He tries to jump up from the rock he is sitting on, but falls over his own feet',
+                      'He pinches himself to see if he is awake',
+                      'He tries to call out, but can\'t'),
+             answer=3),
+
+    Question(question="Who taught Pippin his duties as a soldier of Gondor?",
+             options=('Faramir', 'Beregond', 'Ioreth', 'Bergil'),
+             answer=1),
 ]
 
 questions = list()
