@@ -541,6 +541,134 @@ without_indices = [
     Question(question="Who taught Pippin his duties as a soldier of Gondor?",
              options=('Faramir', 'Beregond', 'Ioreth', 'Bergil'),
              answer=1),
+
+    Question(question="With what was Treebeard's bed covered?",
+             options=('Leaves and cut grass', 'Sheepskin and other animal pelts',
+                      'Dried grass and bracken', 'Reeds and pine needles'),
+             answer=2),
+
+    Question(question="What was the Dwarven name for Celebdil, the Silvertine?",
+             options=('Gabilgathol', 'Bundushathûr', 'Kibil-nâla', 'Zirakzigil'),
+             answer=3),
+
+    Question(question="Why was Éomer not present to greet the Company, when they arrived at Meduseld?",
+             options=('He was dead', 'He was imprisoned', 'He had been captured by Orcs', 'He was in bed'),
+             answer=1),
+
+    Question(question="Who did Pippin watch leaving Minas Tirith, as he sat with Beregond?",
+             options=('Gandalf', 'The old, women and children', 'The errand-riders', 'An army'),
+             answer=1),
+
+    Question(question="By what name was Dwimorberg known in Rohan?",
+             options=('The Lonely Mountain', 'The Black Mountain', 'The Haunted Mountain', 'The Dead Mountain'),
+             answer=2),
+
+    Question(question="Who helped Merry join the Rohirrim in their ride to Minas Tirith?",
+             options=('Thengel', 'Hama', 'Theodred', 'Dernhelm'),
+             answer=3),
+
+    Question(question="What was the first thing Merry said when Aragorn revived him, in the House of Healing?",
+             options=('"Oh good, a real bed"', '"What day is it?"', '"I am hungry"', '"Strider, how splendid!"'),
+             answer=2),
+
+    Question(question="Whilst in parley with the Mouth of Sauron, what did Gandalf call the Dark Lord?",
+             options=('Base Master of Treachery', 'Low Lord of Loathing', 'Tricksy', 'The King of Deceit'),
+             answer=0),
+
+    Question(question="What did Gandalf put on the heads of Frodo and Sam, for the feast on the Field of Cormallen?",
+             options=('Winged helms', 'Wreaths of scarlet flowers', 'Small golden coronets', 'Circlets of Silver'),
+             answer=3),
+
+    Question(question="What was the purpose of the gift Frodo received, on leaving Lothlórien?",
+             options=('To bring good luck', 'To hide him from evil eyes', 'To prolong his strength',
+                      'A light in dark places'),
+             answer=3),
+
+    Question(question="How many horses did the Three Hunters borrow from Éomer?",
+             options=('3', '4', '2', '1'),
+             answer=2),
+
+    Question(question="How does Pippin interrupt the Entmoot when it first starts?",
+             options=('He hiccups loudly', 'He belches', 'He yawns', 'He coughs politely'),
+             answer=2),
+
+    Question(question="Who the Théoden name as his heir when he rode off to battle?",
+             options=('Éowyn', 'Éomer', 'Gandalf', 'Aragorn'),
+             answer=1),
+
+    Question(question="Where was the home of 'old Forlong the Fat'?",
+             options=('Ithilien', 'Lossarnach', 'Imloth Melui', 'Dol Amroth'),
+             answer=1),
+
+    Question(question="To where did Aragorn bid the Dead follow him?",
+             options=('Pelargir', 'Dol Amroth', 'Minas Tirith', 'Umbar'),
+             answer=0),
+
+    Question(question="What was the name of the hill refuge prepared for the women and children of Rohan?",
+             options=('Meduseld', 'Isengard', 'Dunharrow', 'Helm\'s Deep'),
+             answer=2),
+
+    Question(question="What did the hobbits say Isengard looked like, as it filled with water?",
+             options=('A volcanic crater, all smoke and fumes',
+                      'A huge flat saucepan, all steaming and bubbling',
+                      'A large bathtub, all vapours and mists',
+                      'A gian puddle, all muddy and slimy'),
+             answer=1),
+
+    Question(question="What was the chief city of Gondor, abandoned at the time of the War of the Ring.",
+             options=('Arnor', 'Annúminas', 'Osgiliath', 'Henneth Annun'),
+             answer=2),
+
+    Question(question="Who crowned Aragorn?",
+             options=('Frodo', 'Gandalf', 'Faramir', 'Himself'),
+             answer=1),
+
+    Question(question="What did Frodo tell Wormtongue he could have if he stayed in teh Shire, and did not follow "
+                      "Saruman?",
+             options=('A nice little hole to live in', 'Rest and food', 'A holiday',
+                      'Time to appease his sins by planting potatoes'),
+             answer=1),
+
+    Question(question="What did the Men of Gondor call 'sweet galenas'?",
+             options=('Pipe-weed', 'Small white flowers', 'A damson pudding', 'A short sword'),
+             answer=0),
+
+    Question(question="What did the hobbits do that amused the Ents at the Entmoot?",
+             options=('The bowed', 'They shook hands with Treebeard', 'The were \'hasty\' in leaving Entmoot',
+                      'They ate some of their supply of lembas'),
+             answer=0),
+
+    Question(question="Who did the people of Rohan trust to lead them in the absence of Théoden?",
+             options=('Éowyn', 'Éomer', 'Hama', 'Helm'),
+             answer=0),
+
+    Question(question="How many servants carried Faramir to his pyre?",
+             options=('Four', 'Six', 'Ten', 'One dozen'),
+             answer=1),
+
+    Question(question="What is Galadriel's first reaction when Frodo offers her the Ring?",
+             options=('She takes it', 'She laughs', 'She walks away from him', 'She cries'),
+             answer=1),
+
+    Question(question="What did Gimli ask as a gift from Galadriel?",
+             options=('A kiss', 'A strand of hair', 'A picture', 'Gold'),
+             answer=1),
+
+    Question(question="What was the name of the horse that Éomer lent to Aragorn?",
+             options=('Hasufel', 'Shadowfax', 'Snowmane', 'Elendil'),
+             answer=0),
+
+    Question(question="Into how many Farthings was the Shire divided?",
+             options=('1', '2', '3', '4'),
+             answer=3),
+
+    Question(question="How did Bilbo claim to have spent his fifty first birthday?",
+             options=('Under a table', 'In a barrel', 'Against a lamp-post', 'Over the hill'),
+             answer=1),
+
+    Question(question="Into what did Frodo hope Gandalf would turn Sam?",
+             options=('A grass snake', 'A mewlip', 'A spotted toad', 'A dead-end'),
+             answer=2),
 ]
 
 questions = list()
