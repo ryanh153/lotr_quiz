@@ -720,7 +720,7 @@ without_indices = [
              answer=1),
 
     Question(question="When Aragon leapt to Gandalf's defence on the Moria bridge, whose name did Aragorn call out?",
-             options=("Narsil!", "Elendil!", "Arwen!", "Eur!"),
+             options=("Narsil!", "Elendil!", "Arwen!", "Eru"),
              answer=1),
 
     Question(question="What choices did Théoden give gríma when his treachery was discovered?",
