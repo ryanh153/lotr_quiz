@@ -94,7 +94,7 @@ without_indices = [
              options=("Lugdush", "Snaga", "Grishnákh", "Uglúk"),
              answer=3),
 
-    Question(question="\"I am not altogether on anybody's side, be nobody - ...\"?",
+    Question(question="\"I am not altogether on anybody's side, because nobody - ...\"?",
              options=("Tends the woods and the trees as I do", "Remembers the old Ents anymore",
                       "Thinks about the Entwives like I do", "Is altogether on my side"),
              answer=3),
@@ -668,6 +668,134 @@ without_indices = [
 
     Question(question="Into what did Frodo hope Gandalf would turn Sam?",
              options=('A grass snake', 'A mewlip', 'A spotted toad', 'A dead-end'),
+             answer=2),
+
+    Question(question="What did Boromir lose at Tharbad?",
+             options=('His food', 'His horse', 'His sword', 'His way'),
+             answer=1),
+
+    Question(question="After the boat journey, where di Aragorn hope to visit for a guiding sign?",
+             options=('Lothlórien', 'Amon Hen', 'Henneth Annun', 'Fangorn'),
+             answer=1),
+
+    Question(question="How was Frodo's plan to continue alone spoiled?",
+             options=('They had guessed he would go, and threw a farewell party for him',
+                      'The whole Company came with him',
+                      "Aragorn tied him to a tree so he couldn't go",
+                      'Sam came back in time to go with him'),
+             answer=3),
+
+    Question(question="What was Théoden's sword called?",
+             options=("Aiglos", "Glamdring", "Herugrim", "Anduril"),
+             answer=2),
+
+    Question(question="How did Wormtongue arrive at Isengard",
+             options=("On foot with some Dunlendings", "Carried by some Huorns",
+                      "In a small cart pulled by a donkey", "On an old tired horse"),
+             answer=3),
+
+    Question(question="What is the meaning of Rath Celerdain?",
+             options=("Long Street", "The Lampwrights Street", "Osgiliath Road", "The Baker's Street"),
+             answer=1),
+
+    Question(question="What sort of creature stunned Beregond in the final battle at the Black Gate?",
+             options=("Mûmakil", "Orcs", "Hill-Troll", "Uruk-hai"),
+             answer=2),
+
+    Question(question="Who brought the Sceptre of Annúminas to Minas Tirith?",
+             options=("Galadriel", "Círdan", "Radagast", "Elrond"),
+             answer=3),
+
+    Question(question="What did Bilbo leave for Adelard Took?",
+             options=("A horse", "An umbrella", "A shoe shine kit", "A doormat"),
+             answer=1),
+
+    Question(question="What is Tinúviel, in the Common Speech?",
+             options=("Lark", "Nightingale", "Cuckoo", "Thrush"),
+             answer=1),
+
+    Question(question="When on Caradhras, to whom did Gandalf say \"if Elves could fly over mountain, they might "
+                      "fetch the Sun to save us\"?",
+             options=("Gimli", "Legolas", "Aragorn", "Frodo"),
+             answer=1),
+
+    Question(question="When Aragon leapt to Gandalf's defence on the Moria bridge, whose name did Aragorn call out?",
+             options=("Narsil!", "Elendil!", "Arwen!", "Eur!"),
+             answer=1),
+
+    Question(question="What choices did Théoden give gríma when his treachery was discovered?",
+             options=("Prison or death", "Exile or death", "To ride to war or exile", "To ride to war or prison"),
+             answer=2),
+
+    Question(question="Who said he could lay Pippin on his back or stand him on his head?",
+             options=("Merry", "Faramir", "Gandalf", "Bergil"),
+             answer=3),
+
+    Question(question="To where did Aragon summon the dead?",
+             options=('The Stone of Erech', 'Pelargir', "Minas Tirith", "Meduseld"),
+             answer=0),
+
+    Question(question="Who said that his death lay beyond the door to the Paths of the Dead?",
+             options=("Aragorn", "Legolas", "Gimli", "Halbarad"),
+             answer=3),
+
+    Question(question="Which horse did Merry ride from Edoras to Minas Tirith?",
+             options=("Stybba", "Windfola", "Snowmane", "Shadowfax"),
+             answer=1),
+
+    Question(question="What does Gandalf say must be done, as \"soon there will be battle on the fields\"?",
+             options=("A sortie must be made", "All the wounded should be evacuated to Lossarnach",
+                      "The gate of Minas Tirith be shut and barred",
+                      "The city walls have to be held until the Rohirrim arrive"),
+             answer=0),
+
+    Question(question="Who found Merry when he fell over, as he followed a shadow outside the Prancing Pony?",
+             options=("Gandalf", "Nob", "Hob", "Bob"),
+             answer=1),
+
+    Question(question="How many Black Riders came upon the hobbits at Weathertop?",
+             options=('3', '4', '5', '6'),
+             answer=2),
+
+    Question(question="Where did the Fellowship stop briefly, in their flight from the gate of Moria?",
+             options=("The Dimrill Dale", "The Silverlode valley", "Druin's Dale", "The mere of Moria"),
+             answer=0),
+
+    Question(question="Sam said that not even his uncle .... who, could do a trick like crossing the rope bridge?",
+             options=("Sandy", "Ted", "Andy", "Bill"),
+             answer=2),
+
+    Question(question="Who first peeped into the Mirror of Galadriel?",
+             options=("Frodo", "Merry", "Galadriel", "Sam"),
+             answer=3),
+
+    Question(question="What had been left in Galadriel's care, to pass to Aragorn?",
+             options=("Anduril", "A green stone set in a brooch", "A banner", "A crown"),
+             answer=1),
+
+    Question(question="Who, alone of the Fellowship, did the Elves demand should enter Lórien blindfolded?",
+             options=("Frodo", "Aragorn", "Boromir", "Gimli"),
+             answer=3),
+
+    Question(question="Who wanted to see Elf-magic?",
+             options=("Frodo", "Boromir", "Sam", "Aragorn"),
+             answer=2),
+
+    Question(question="According to Celeborn, who remembered things the wise should know?",
+             options=("Wizards", "Dwarfs", "Old wives", "Trees"),
+             answer=2),
+
+    Question(question="What was the response of the dead to Aragorn's summons?",
+             options=("A horn blew", "A great cry", "A wind blew the torches out", "Their king appeared"),
+             answer=2),
+
+    Question(question="How was Faramir struck down?",
+             options=("Hewn down by Orcs", "Stabbed by Southron spears",
+                      "His horse was killed by an axeman", "Shot with a deadly dart"),
+             answer=3),
+
+    Question(question="What weapons did the Easterlings prefer in battle?",
+             options=("Scimitars", "Spears", "Axes", "Daggers"),
              answer=2),
 ]
 
