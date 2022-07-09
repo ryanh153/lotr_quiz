@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main_page main_block">
+    {{ question.question }}
+</div>
+<hr>
+
+<div class="main_page">
+    {% block question_content %}
+    {% endblock %}
+</div>
+
+<div class="main_page streak">
+    <p>
+        Current Streak: {{ player.current_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
+        Longest Streak: {{ player.longest_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
+        Correct: {{ player.win_percentage_str }}&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+</div>
+
+{% endblock %}
