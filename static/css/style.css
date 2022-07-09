@@ -34,6 +34,12 @@
     text-align: center;
 }
 
+.welcome {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .button_row {
     display: inline;
     padding-left: 10px;
@@ -76,6 +82,26 @@ footer {
 h1 {
     font-family: "LotrFont";
     font-size: 24px;
+}
+
+h2 {
+    font-family: "LotrFont";
+    font-size: 20px;
+}
+
+h2.welcome {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "LotrFont";
+    font-size: 16px;
+}
+
+h3.welcome {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .grid_container {

@@ -1,12 +1,14 @@
 {% extends "layout.html" %}
 {% block content %}
 <body>
-<h2>Welcome to the Lord of the Rings Trivia Training Website!</h2>
-<h3>To get started click the button below</h3>
-<form class="button_row" action="{{ url_for('base_question') }}" method="get">
-    <button type="submit" class="button next_button">
-                Ask me the questions bridge keeper. I am not afraid.
-    </button>
-</form>
+<div class="welcome">
+    <h2 class="welcome">Welcome to the LOTR Trivia Training Website!</h2>
+    <h3 class="welcome">To get started click the button below</h3>
+    <form class="button_row" action="{{ url_for('base_question') }}" method="get">
+        <button type="submit" class="button next_button">
+                    Ask me the questions bridge keeper. I am not afraid.
+        </button>
+    </form>
+</div>
 </body>
 {% endblock %}
