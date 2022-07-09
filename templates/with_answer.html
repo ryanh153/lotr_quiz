@@ -2,29 +2,39 @@
 {% block content %}
 <body>
     <div class="main_block">
-            {{ question.question }}
-    </div>
-
-    <div class="main_block">
             {% for option in question.options %}
                 {{option}}<br>
             {% endfor %}
     </div>
-
+<hr>
     <div class="main_block">
             <b>{{ question.options[question.answer]}}</b><br>
             {% if question.extra_text != "" %}
                 <b>{{ question.extra_text }}</b>
             {% endif %}
     </div>
+<hr>
+    <div class="button_container">
+        <form class="button_row" action="{{ url_for('base_question') }}" method="get">
+            <button type="submit" class="button next_button">
+                        Next Question
+            </button>
+        </form>
 
-    <div class="main_block">
-            <form action="{{ url_for('base_question') }}" method="get">
-                <button type="submit" class="button next_button">
-                    Next Question
-                </button>
-            </form>
+       <form class="button_row" action="{{ url_for('increment_counter') }}" method="post">
+            <button type="submit" class="button streak_increment"
+                    name="question_index" value={{ question.index }}>
+                Correct!
+            </button>
+        </form>
+
+       <form class="button_row" action="{{ url_for('reset_counter') }}" method="post">
+           <button type="submit" class="button streak_reset"
+                    name="question_index" value={{ question.index }}>
+                Incorrect
+            </button>
+        </form>
     </div>
-
+<hr>
 </body>
 {% endblock %}

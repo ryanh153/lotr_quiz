@@ -2,15 +2,11 @@
 {% block content %}
 <body>
     <div class="main_block">
-            {{ question.question }}
-    </div>
-
-    <div class="main_block">
             {% for option in question.options %}
                 {{option}}<br>
             {% endfor %}
     </div>
-
+<hr>
     <div class="main_block">
             <form action="{{ url_for('with_answer') }}" method="post">
                 <button type="submit" class="button answer_button" name="question_index" value={{ question.index }}>
@@ -18,6 +14,6 @@
                 </button>
             </form>
     </div>
-
+<hr>
 </body>
 {% endblock %}

@@ -22,6 +22,26 @@
     background-color: #c542f5;
 }
 
+.streak_increment {
+    background-color: #fcba03;
+}
+
+.streak_reset {
+    background-color: #fc1c03;
+}
+
+.button_row {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     background-color: #E0C9A6;
     height: 55px;
@@ -42,11 +62,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@font-face {
-    font-family: "My Custom Font";
-    src: url(http://www.example.org/mycustomfont.ttf) format("truetype");
 }
 
 @font-face {
@@ -74,3 +89,6 @@ h1 {
     font-family: "LotrFont";
 }
 
+hr {
+border-top: 1px solid black;
+}
