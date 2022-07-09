@@ -30,6 +30,10 @@
     background-color: #fc1c03;
 }
 
+.streak {
+    text-align: center;
+}
+
 .button_row {
     display: inline;
     padding-left: 10px;

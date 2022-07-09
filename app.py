@@ -13,37 +13,37 @@ def base_question():
     ii = np.random.randint(0, len(questions))
     print(f'Picked index {ii}')
     question = questions[ii]
-    return render_template('base_question.html', question=question, streak=player.streak)
+    return render_template('base_question.html', question=question, player=player)
 
 
 @app.route('/with_options', methods=['POST'])
 def with_options():
     print('in with options')
     ii = int(request.form['question_index'])
-    return render_template('with_options.html', question=questions[ii], streak=player.streak)
+    return render_template('with_options.html', question=questions[ii], player=player)
 
 
 @app.route('/with_answer', methods=['POST'])
 def with_answer():
     print('in with answer')
     ii = int(request.form['question_index'])
-    return render_template('with_answer.html', question=questions[ii], streak=player.streak)
+    return render_template('with_answer.html', question=questions[ii], player=player)
 
 
 @app.route('/increment_counter', methods=['POST'])
 def increment_counter():
     print('in incrementer')
     ii = int(request.form['question_index'])
-    player.streak += 1
-    return render_template('with_answer.html', question=questions[ii], streak=player.streak)
+    player.correct_answer()
+    return render_template('with_answer.html', question=questions[ii], player=player)
 
 
 @app.route('/reset_counter', methods=['POST'])
 def reset_counter():
     print('in streak reset')
     ii = int(request.form['question_index'])
-    player.streak = 0
-    return render_template('with_answer.html', question=questions[ii], streak=player.streak)
+    player.incorrect_answer()
+    return render_template('with_answer.html', question=questions[ii], player=player)
 
 
 if __name__ == "__main__":

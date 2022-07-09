@@ -24,12 +24,16 @@
 </div>
 
 <div class="main_page streak">
-    Current Streak: {{ streak }}
+    <p>
+        Current Streak: {{ player.current_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
+        Longest Streak: {{ player.longest_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
+        Correct: {{ player.win_percentage_str }}&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
 </div>
 
 <footer>
     <h1>
-        Version 0.0.1
+        Version 0.0.2
     </h1>
 </footer>
 </body>
