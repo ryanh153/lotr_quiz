@@ -1,12 +1,10 @@
 import jsonpickle
 from flask import session
 
-from data_objects.player import Player
 
-
-def store_data(player: Player):
+def store_data(player):
     session['player'] = jsonpickle.encode(player)
 
 
-def retrieve_data() -> Player:
+def retrieve_data():
     return jsonpickle.decode(session['player'])

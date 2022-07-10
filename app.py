@@ -1,17 +1,20 @@
 import logging
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 from data_objects.player import Player
-from data_objects.questions import questions
-from utils.data_storage import retrieve_data, store_data
+from data_objects.questions import load_questions
+from utils.data_storage import store_data
 from utils.render_template_helpers import render_wrapper
 
 app = Flask(__name__)
 app.secret_key = 'any_random_string'
+
 LOG_FORMAT = '%(asctime)s - %(filename)s - %(lineno)d: %(message)s'
 logging.basicConfig(format=LOG_FORMAT, level=logging.DEBUG)
 logger = logging.getLogger(__name__)
+
+questions = load_questions()
 
 
 @app.route('/')
@@ -23,47 +26,41 @@ def index():
 
 
 @app.route('/base_question')
-@render_wrapper
+@render_wrapper(questions, new_question=True)
 def base_question(question, player):
     logger.debug('in base')
     return render_template('base_question.html', question=question, player=player)
 
 
 @app.route('/with_options', methods=['POST'])
-def with_options():
+@render_wrapper(questions)
+def with_options(question, player):
     logger.debug('in with options')
-    player = retrieve_data()
-    ii = int(request.form['question_index'])
-    return render_template('with_options.html', question=questions[ii], player=player)
+    return render_template('with_options.html', question=question, player=player)
 
 
 @app.route('/with_answer', methods=['POST'])
-def with_answer():
+@render_wrapper(questions)
+def with_answer(question, player):
     logger.debug('in with answer')
-    player = retrieve_data()
-    ii = int(request.form['question_index'])
-    return render_template('with_answer.html', question=questions[ii], player=player)
+    return render_template('with_answer.html', question=question, player=player)
 
 
 @app.route('/increment_counter', methods=['POST'])
-def increment_counter():
+@render_wrapper(questions)
+def increment_counter(question, player):
     logger.debug('in incrementer')
-    ii = int(request.form['question_index'])
-    player = retrieve_data()
     player.correct_answer()
-    store_data(player)
-    return render_template('with_answer.html', question=questions[ii], player=player)
+    return render_template('with_answer.html', question=question, player=player)
 
 
 @app.route('/reset_counter', methods=['POST'])
-def reset_counter():
+@render_wrapper(questions)
+def reset_counter(question, player):
     logger.debug('in streak reset')
-    ii = int(request.form['question_index'])
-    player = retrieve_data()
     player.incorrect_answer()
-    store_data(player)
-    return render_template('with_answer.html', question=questions[ii], player=player)
+    return render_template('with_answer.html', question=question, player=player)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
