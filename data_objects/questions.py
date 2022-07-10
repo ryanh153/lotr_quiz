@@ -797,6 +797,50 @@ without_indices = [
     Question(question="What weapons did the Easterlings prefer in battle?",
              options=("Scimitars", "Spears", "Axes", "Daggers"),
              answer=2),
+
+    Question(question="Who slew Uglúk?",
+             options=("Aragorn", "Éomer", 'Merry', 'Pippin'),
+             answer=1),
+
+    Question(question="Why did Treebeard take more kindly to Elves than to others?",
+             options=("Because they lived in the woods and cared for the trees",
+                      "Because the Elves cured the Ents of dumbness long ago",
+                      "Because the Elves were as long-lived as the Ents",
+                      "Because the Elves would not harm the trees of Fangorn Forest"),
+             answer=1),
+
+    Question(question="Where did Gandalf go, once rescued, after destroying the Balrog?",
+             options=("Caras Galadhon", "Rhosgobel, the house of Radagast",
+                      "To Thranduil's Halls in Mirkwood", "Rivendell"),
+             answer=0),
+
+    Question(question="What name did Aragorn cry out, as Gandalf rode Shadowfax from Edoras?",
+             options=("The White Rider!", "The Grey Pilgrim", "Mithrandir!", "Stormcrow!"),
+             answer=0),
+
+    Question(question="Who did Pippin meet as he fled the Hallows, looking for Gandalf?",
+             options=("The Prince of Dol Amroth", "Beregond", "Húrin of the Keys",
+                      "The warden of the Houses of Healing"),
+             answer=1),
+
+    Question(question="In the song about the Battle of the Pelennor Fields, who was referred ot as"
+                      " \"Thengling mighty\"?",
+             options=("Grimbold", "Hirluin", "Forlong", "Théoden"),
+             answer=3),
+
+    Question(question="What did Gandalf advise Théoden should be done first?",
+             options=("To attack Mordor", "To build defences", "The destroy the threat of Saruman",
+                      "To punish gríma"),
+             answer=2),
+
+    Question(question="Who did Pippin call \"a fine old fellow\"?",
+             options=("Gandalf", "Théoden", "Denethor", "Fatty Bolger"),
+             answer=1),
+
+    Question(question="Of what did Gandalf warn the hobbits, when he left Isengard for Helm's Deep?",
+             options=("Stay our of the Huorn-wood", "Keep an eye out for gríma", "Keep away from Orthanc",
+                      "Keep their eyes and ears open and their mouths shut"),
+             answer=2),
 ]
 
 questions = list()
