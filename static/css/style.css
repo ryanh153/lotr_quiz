@@ -62,6 +62,20 @@ header {
     align-items: center;
 }
 
+.page_image {
+    height: 100px;
+}
+
+.right_page_image {
+    position: absolute;
+    right: 25px;
+}
+
+.left_page_image {
+    position: absolute;
+    left: 25px;
+}
+
 footer {
     position: absolute;
     bottom: 0;

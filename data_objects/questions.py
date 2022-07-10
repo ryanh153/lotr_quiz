@@ -31,7 +31,8 @@ def construct_questions():
                  answer=3),
 
         Question(question="What was Denethor's first command to Pippin?",
-                 options=("Speak and be not silent", "Shut up", "Sing me a song", "Take your place in the Citadel Guard"),
+                 options=("Speak and be not silent", "Shut up", "Sing me a song", "Take your place in the Citadel "
+                                                                                  "Guard"),
                  answer=0),
 
         Question(question="Which of the Fellowship rode with Aragorn on the Paths of the Dead",
@@ -140,7 +141,8 @@ def construct_questions():
                  options=("The Sons of Elrond", "Gandalf and Aragorn", "Imrahil and Éomer", "Pippin and Merry"),
                  answer=0),
 
-        Question(question="Finish the line that Legolas sang at the Cormallen: \"To the Sea, to the Sea! The White Gulls "
+        Question(question="Finish the line that Legolas sang at the Cormallen: "
+                          "\"To the Sea, to the Sea! The White Gulls "
                           "are crying, The wind is blowing ...\"",
                  options=("and my spirit is crying", "and the white foam is flying",
                           "and I know not where I'm going", "and Middle-earth is dying"),
@@ -240,7 +242,8 @@ def construct_questions():
                  answer=3),
 
         Question(question="What did Aragorn call Théoden, when speaking of his body returning to Rohan?",
-                 options=("Théoden the Slayer", "Théoden the Renewed", "Théoden the Horse-Lord", "Théoden the Renowned"),
+                 options=("Théoden the Slayer", "Théoden the Renewed", "Théoden the Horse-Lord",
+                          "Théoden the Renowned"),
                  answer=3),
 
         Question(question="Into what should Bilbo have put the Ring, to leave it for Frodo?",
@@ -455,7 +458,8 @@ def construct_questions():
                  answer=1),
 
         Question(question="What had Treebeard forgotten that hobbits do?",
-                 options=('They sit down to eat', 'They comb their hair', 'They lie down to sleep', 'The bathe their feet'),
+                 options=('They sit down to eat', 'They comb their hair', 'They lie down to sleep',
+                          'The bathe their feet'),
                  answer=2),
 
         Question(question='What relation was Éowyn to Éomer?',
@@ -511,9 +515,11 @@ def construct_questions():
                  options=('Mundeli', 'Oldburg', 'Mundburg', 'Oldbury'),
                  answer=2),
 
-        Question(question="When Gandalf said that he would allow only one more \"but\" tonight what did Pippin then ask "
+        Question(question="When Gandalf said that he would allow only one more \"but\" "
+                          "tonight what did Pippin then ask "
                           "about?",
-                 options=("Aragorn's use of the Palantir of Orthanc", "Gollum", 'When Merry and the Rohirrim would arrive',
+                 options=("Aragorn's use of the Palantir of Orthanc", "Gollum",
+                          'When Merry and the Rohirrim would arrive',
                           'Shelob'),
                  answer=1),
 
@@ -580,7 +586,8 @@ def construct_questions():
                  options=('Base Master of Treachery', 'Low Lord of Loathing', 'Tricksy', 'The King of Deceit'),
                  answer=0),
 
-        Question(question="What did Gandalf put on the heads of Frodo and Sam, for the feast on the Field of Cormallen?",
+        Question(question="What did Gandalf put on the heads of Frodo and Sam, for the feast on the Field of "
+                          "Cormallen?",
                  options=('Winged helms', 'Wreaths of scarlet flowers', 'Small golden coronets', 'Circlets of Silver'),
                  answer=3),
 
@@ -724,7 +731,8 @@ def construct_questions():
                  options=("Gimli", "Legolas", "Aragorn", "Frodo"),
                  answer=1),
 
-        Question(question="When Aragon leapt to Gandalf's defence on the Moria bridge, whose name did Aragorn call out?",
+        Question(question="When Aragon leapt to Gandalf's defence on the Moria bridge, whose name did Aragorn call "
+                          "out?",
                  options=("Narsil!", "Elendil!", "Arwen!", "Eru"),
                  answer=1),
 

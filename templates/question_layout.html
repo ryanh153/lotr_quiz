@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="main_page main_block">
-    {{ question.question }}
+    {{ page_data.question.question }}
 </div>
 <hr>
 
@@ -12,9 +12,11 @@
 
 <div class="main_page streak">
     <p>
-        Current Streak: {{ player.current_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
-        Longest Streak: {{ player.longest_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
-        Correct: {{ player.win_percentage_str }}&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="page_image left_page_image" src="{{ page_data.image }}">
+        Current Streak: {{ page_data.player.current_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
+        Longest Streak: {{ page_data.player.longest_streak }}&nbsp;&nbsp;&nbsp;&nbsp;
+        Correct: {{ page_data.player.win_percentage_str }}&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="page_image right_page_image" src="{{ page_data.image }}">
     </p>
 </div>
 

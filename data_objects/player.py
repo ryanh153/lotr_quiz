@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from utils.data_storage import store_data
+from utils.data_storage import store_player_data
 
 
 @dataclass
@@ -15,12 +15,12 @@ class Player:
         self.n_correct += 1
         if self.current_streak > self.longest_streak:
             self.longest_streak = self.current_streak
-        store_data(self)
+        store_player_data(self)
 
     def incorrect_answer(self):
         self.current_streak = 0
         self.n_incorrect += 1
-        store_data(self)
+        store_player_data(self)
 
     @property
     def n_answered(self):

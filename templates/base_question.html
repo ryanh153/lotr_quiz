@@ -3,7 +3,7 @@
 <body>
     <div class="main_block">
         <form action="{{ url_for('with_options') }}" method="post">
-            <button type="submit" class="button option_button" name="question_index" value={{ question.index }}>
+            <button type="submit" class="button option_button">
                 Show Options
             </button>
         </form>
@@ -11,7 +11,7 @@
 <hr>
     <div class="main_block">
         <form action="{{ url_for('with_answer') }}" method="post">
-            <button type="submit" class="button answer_button" name="question_index" value={{ question.index }}>
+            <button type="submit" class="button answer_button">
                 Show Answer
             </button>
         </form>
