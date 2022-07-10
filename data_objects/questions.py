@@ -1,5 +1,8 @@
+import logging
 from dataclasses import dataclass
 from typing import Tuple
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -841,6 +844,44 @@ without_indices = [
              options=("Stay our of the Huorn-wood", "Keep an eye out for gríma", "Keep away from Orthanc",
                       "Keep their eyes and ears open and their mouths shut"),
              answer=2),
+
+    Question(question="Who was Aragorn's father?",
+             options=("Aredhel", "Arathorn", "Imrahil", "Celeborn"),
+             answer=1),
+
+    Question(question="Who fell in love with a fair Elf main, in the song that Aragorn sang on Weathertop?",
+             options=("Elrond", "Amroth", "Beren", "Fëanor"),
+             answer=2),
+
+    Question(question="What is the missing word: 'A ... Gilthoniel'?",
+             options=("Varda", "Elbereth", "Galadriel", "Berethil"),
+             answer=1),
+
+    Question(question="What star was most beloved by the elves?",
+             options=("The North Star", "The Polar Star", "Eärendil", "Sirius"),
+             answer=2),
+
+    Question(question="What gifts did Galadriel give Merry and Pippin, when the Company left Lothlórien?",
+             options=("Bows and arrows", "Silver belts clasped with gold", "New pipes", "Swords"),
+             answer=1),
+
+    Question(question="For how many leagues did the Three Hunters pursue the Orcs on foot?",
+             options=('5', '15', '45', '105'),
+             answer=2),
+
+    Question(question="How many horses did Éomer lose in the battle near Entwood?",
+             options=('15', '12', '9', '30'),
+             answer=1),
+
+    Question(question="What is the term for a young Ent?",
+             options=("An Entsprout", "An Entette", "An Entern", "An Enting"),
+             answer=3),
+
+    Question(question="How does Gandalf summon the horses to carry the party from Fangorn to Edoras?",
+             options=("He lifts his hand and calls aloud in a great voice",
+                      "He snaps his fingers and stamps hi feet",
+                      "He whistles", "He claps loudly twice"),
+             answer=2),
 ]
 
 questions = list()
@@ -849,4 +890,4 @@ for ii, q in enumerate(without_indices):
     questions.append(q)
 
 
-print(f'We are working with {len(questions)} questions')
+logger.info(f'We are working with {len(questions)} questions')
