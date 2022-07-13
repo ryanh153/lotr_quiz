@@ -932,6 +932,100 @@ def construct_questions():
         Question(question="Of what did Sam hope to get a glimpse in the peaceful days in Cormallen?",
                  options=("A cat of Queen Beruthiel", "A dragon", "An oliphaunt", "A scion of the Oldest Tree"),
                  answer=2),
+
+        Question(question="Who took command of the City defence, when Denethor would not leave Faramir's bedside?",
+                 options=("Imrahil", "Golasgil, lord of Anfalas", "Gandalf", "Forlong the Fat, Lord of Lossarnach"),
+                 answer=2),
+
+        Question(question="How many stars were there on the standard, borne on Aragorn's ship?",
+                 options=("5", '7', '9', '6'),
+                 answer=1),
+
+        Question(question="By the banks of which river did the Company share a farewell feast with Celeborn and "
+                          "Galadriel?",
+                 options=("River Running", "Silverlode", "Baranduin", "Celebrant"),
+                 answer=1),
+
+        Question(question="At what age did Frodo come into his inheritance?",
+                 options=("18", "25", "33", "42"),
+                 answer=2),
+
+        Question(question="Who came through the window, 'shears, grass clippings and all'?",
+                 options=("Gandalf", "Frodo", "Tom Bombadil", "Sam"),
+                 answer=3),
+
+        Question(question="Complete the last line of Frodo's song \"For though it was day, to her surprise...\"",
+                 options=("They all went back to bed", "The moon got up instead!",
+                          "She said \"Right said Fred!\"", "Where's my ale and bread?"),
+                 answer=0),
+
+        Question(question="How far the Théoden say it was from Edoras to Minas Tirith?",
+                 options=("Five hundred leagues", "Fifty leagues", "A hundred leagues and two",
+                          "A thousand leagues"),
+                 answer=2),
+
+        Question(question="What did Gandalf think had hastened the start of Sauron's assault of Minas Tirith?",
+                 options=("Aragorn's use of the Palantir of Orthanc", "His return as Gandalf the White",
+                          "The rousing of the Ents and destruction of Isengard",
+                          "The victor of Rohirrim at Helm's Deep"),
+                 answer=0),
+
+        Question(question="Who told Théoden that the weather was changing, as Ghân-buri-Ghân had said?",
+                 options=("Widfara", "Wulfhelm", "Deorlaf", "Guthwine"),
+                 answer=0),
+
+        Question(question="To whom had the 'forgotten people' made the oath they later broke?",
+                 options=("Arvedui", "Sauron", "Isildur", "Elrond"),
+                 answer=2),
+
+        Question(question="What did Éowyn give Merry before he left Dunharrow?",
+                 options=("A sword", "A leather jerkin", "A cup", "Food for the journey"),
+                 answer=1),
+
+        Question(question="Denethor said there were two follies: -to send the Ring to Mordor in the hands of \""
+                          "a witless halfling\", and...?",
+                 options=("To trust in the wisdom of Gandalf",
+                          "To try to send the Ring over the sea into the Ancient west",
+                          "To use the Ring", "To place hope in the strength of arms"),
+                 answer=2),
+
+        Question(question="Who was banner bearer to the King of the Mark?",
+                 options=("Elrond", "Guthlaf", "Gamling", "Eorl"),
+                 answer=1),
+
+        Question(question="Whom did the Warden in the House of Healing describe as 'very tough in the fibre'?",
+                 options=("Hobbits", "Faramir", "Éowyn", "Bergil"),
+                 answer=0),
+
+        Question(question="What did Gandalf say he would do regarding the terms the Mouth of Sauron offered?",
+                 options=("Consider them, in his own time", "Reject them utterly", "Negotiate",
+                          "Refer the decision to Aragorn"),
+                 answer=1),
+
+        Question(question="When peering into the Mirror of Galadriel, whom did Sam see cutting down trees?",
+                 options=("Gaffer Gamgee", "Farmer Cotton", "Strange Men", "Ted Sandyman"),
+                 answer=3),
+
+        Question(question="What name did Galadriel give Aragorn, on his departure from Lothlórien?",
+                 options=("Strider", "Dúnedain", "Anduril", "Elessar"),
+                 answer=3),
+
+        Question(question="What was King Théoden's most precious horse called?",
+                 options=("Shadowfax", "Bill", "Hasufel", "Roheryn"),
+                 answer=0),
+
+
+        Question(question="Which Elf blindfolded the Fellowship in Lothlórien?",
+                 options=("Haldir", "Rumil", "Orophin", "Nimrodel"),
+                 answer=0),
+
+        Question(question="What did Same first want to do, after peering into the Mirror of Galadriel?",
+                 options=("Tell Frodo about it", "Go home", "Get on with the quest", "Touch the water"),
+                 answer=1),
+
+        Question(question="Who was Galadriel's daughter?",
+                 options=("Arwen", "Celebrían", "Nimrodel", "Finduilas"),
+                 answer=1),
     ]
 
     return without_indices
@@ -943,5 +1037,5 @@ def load_questions():
         q.index = ii
         questions.append(q)
 
-    logger.info(f'We are working with {len(questions)} questions')
+    print(f'We are working with {len(questions)} questions')
     return questions
