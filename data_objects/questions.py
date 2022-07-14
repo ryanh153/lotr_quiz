@@ -1026,6 +1026,48 @@ def construct_questions():
         Question(question="Who was Galadriel's daughter?",
                  options=("Arwen", "Celebrían", "Nimrodel", "Finduilas"),
                  answer=1),
+
+        Question(question="Where did the Captain of the West stop for a day on their return from the Fields of "
+                          "Cormallen?",
+                 options=("Emyn Muil", "Parth Galen", "Tol Brandir", "Osgiliath"),
+                 answer=3),
+
+        Question(question="When the new Tree was planted in the Court of the Fountain, what happened to the old one?",
+                 options=("It was burned", "It was given to the Anduin", "It was laid to rest in Rath Dinen",
+                          "It was mulched for compost for the new Tree"),
+                 answer=2),
+
+        Question(question="What is the next line: \"The Road goes ever on and on ...\"?",
+                 options=("Like Bilbo's never ending song", "Like dreams beneath a summer sun",
+                          "Down from the door where it began", "And from his doom he ran and ran"),
+                 answer=2),
+
+        Question(question="What name did Gandalf call the Balrog?",
+                 options=("Flame of Arnor", "Flame of Shadow", "Fire of Sauron", "Flame of Udûn"),
+                 answer=3),
+
+        Question(question="Who was the first Elf to welcome Frodo, in the eaves of Lórien?",
+                 options=("Haldir", "Húrin", "Huan", "Hob"),
+                 answer=0),
+
+        Question(question="Who added a verse about fireworks to Gandalf's lament?",
+                 options=("Frodo", "Bilbo", "Aragorn", "Sam"),
+                 answer=3),
+
+        Question(question="What relation was Éowyn to Théoden?",
+                 options=("Daughter", "Sister", "Wife", "Niece"),
+                 answer=3),
+
+        Question(question="What did Legolas desire from the Isengard doorwardens?",
+                 options=("Cheese", "Sausages", "Wine", "Salad"),
+                 answer=2),
+
+        Question(question="How did Gandalf greet Pippin at the ruins of Isengard?",
+                 options=("\"Hello Pippin! This is a pleasant surprise!\"",
+                          "\"Get up, you tom-fool of a Took!\"",
+                          "\"Pippin, stop nelly-podging around and tell me where Treebeard is!\"",
+                          "\"Peregrin Took! What are you doing here?\""),
+                 answer=1),
     ]
 
     return without_indices
